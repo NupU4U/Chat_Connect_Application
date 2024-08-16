@@ -1,0 +1,19 @@
+# This is a Kivy language file for customizing the UI layout.
+
+BoxLayout:
+    orientation: 'vertical'
+
+    Label:
+        id: chat_log
+        text: 'Chat Log'
+        size_hint_y: 8
+
+    TextInput:
+        id: message_input
+        size_hint_y: 1
+        multiline: False
+
+    Button:
+        text: 'Send'
+        size_hint_y: 1
+        on_press: app.send_message()
